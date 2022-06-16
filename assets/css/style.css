@@ -1,0 +1,188 @@
+:root {
+  --bg-color: #DDD;
+  --letter-color: #333;;
+}
+
+
+
+*{
+	font-family: 'Bree Serif', serif;
+	color: var(--letter-color);
+}
+
+/* ESTRUCTURA */
+.container__grid{
+	display: grid;
+	grid-template-rows: 100vh 300vh 100px;
+}
+
+.container__header{
+	background-color: darkblue;
+	grid-row: 1/2;
+}
+
+.container__main{
+	background-color: ghostwhite;
+	grid-row: 2/3;
+}
+
+.container__footer{
+	background-color: #333;
+	grid-row: 3/4;
+}
+
+/* HEADER -NAV */
+.header__nav{
+	display: flex;
+	background-color: var(--bg-color);
+	height: 80px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3%;
+}
+
+.nav__barra{
+	width: 30%;
+}
+.nav__lista{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__item{
+	list-style-type: none;
+}
+.nav__item a{
+	text-decoration: none;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+}
+
+/* HEADER -LOGO */
+.logo{
+	text-decoration: none;
+}
+.logo img{
+	background-color: #222; /* Se aplica solo acá, ya que modifica el fondo de la img */
+	width: 70px;
+	filter: invert(1); /* invertir color de la imagen */
+}
+
+/* HEADER -PORTADA */
+.portada{
+	height: calc(100vh - 80px);
+	background-image: url("../../assets/images/portada.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -180px;
+}
+
+/* MAIN */
+/* SECTION MUSICA*/
+.musica__container{
+	display: flex;
+	padding: 50px 3%;
+	background-color: #000;
+	text-align: center;
+	height: calc(100vh - 70px);
+}
+
+.musica__title{
+	letter-spacing: 8px;
+	font-size: 3em;
+	margin: 30px 0 40px 0;
+}
+
+.musica__tamano{
+	width: 50%;
+}
+/* MUSICA -SPOTIFY */
+.musica__spotify{
+	background: linear-gradient(181deg, rgba(221,221,221,1) 36%, rgba(0,0,0,1) 100%);
+}
+
+/* MUSICA -TOUR */
+.musica__tour .musica__title{ /*Color de TOUR */
+	color: var(--bg-color);
+	letter-spacing: 15px;
+}
+
+.tour__informacion{
+	font-size: 1.2em;
+	margin-bottom: 3em;
+}
+
+.tour__informacion:first-child{
+	/*margin-top: 30px;*/
+}
+
+.tour__parrafo{ /* Colores de los párrafos e interlineado */
+	margin: 5px;
+	color: #BBB;
+}
+
+.tour__date{
+	font-size: 1.3em;
+	color: #FFF;
+}
+
+.tour__ticket{
+	background-color: red;
+	display: inline-block;
+	padding: 10px;
+	color: black;
+}
+/* MAIN FOTOS*/
+.foto__show{
+	background-color: var(--bg-color);
+	padding: 50px 3%;
+	text-align: center;
+}
+
+.foto__show .musica__title{
+	margin: 0 0 20px 0;
+}
+.fotos__album{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: calc(200vh - 170px);
+}
+.foto__container{
+	width: 30%;
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.foto1{
+	background-image: url("../../assets/images/fotos/foto1.jpg");
+}
+.foto2{
+	background-image: url("../../assets/images/fotos/foto2.jpg");
+}
+.foto3{
+	background-image: url("../../assets/images/fotos/foto3.jpg");
+}
+.foto4{
+	background-image: url("../../assets/images/fotos/foto4.jpg");
+}
+.foto5{
+	background-image: url("../../assets/images/fotos/foto5.jpg");
+}
+.foto6{
+	background-image: url("../../assets/images/fotos/foto6.jpg");
+}
+.foto7{
+	background-image: url("../../assets/images/fotos/foto7.jpg");
+}
+.foto8{
+	background-image: url("../../assets/images/fotos/foto8.jpg");
+}
+.foto9{
+	background-image: url("../../assets/images/fotos/foto9.jpg");
+}
+
+footer{
+	background-color: #333;
+}

@@ -13,7 +13,7 @@
 /* ESTRUCTURA */
 .container__grid{
 	display: grid;
-	grid-template-rows: 100vh 300vh 100px;
+	grid-template-rows: 100vh 300vh 400px;
 }
 
 .container__header{
@@ -183,6 +183,43 @@
 	background-image: url("../../assets/images/fotos/foto9.jpg");
 }
 
-footer{
-	background-color: #333;
+/* FOOTER */
+.container__footer{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0)), url(https://www.gente.com.ar/wp-content/uploads/2022/05/Mari%CC%81a-Becerra-1.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+
+.footer__contenido{
+	margin-left: -20%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container__footer a{
+	text-decoration: none;
+}
+
+.redes__container{
+	width: 300px;
+	margin-top: 30px;
+}
+
+.redes__link{
+	display: flex;
+	justify-content: space-between;
+}
+
+.redes__link i{
+	filter: invert(100%);
+}
+
+.redes__link i:hover{
+	filter: invert(0);
 }
